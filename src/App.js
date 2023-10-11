@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Welcome from "./components/welcome";
+import WelcomeES from "./components/welcomeES5";
+import "./App.css";
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Welcome name="Abdalrhman" age="19" city="cairo"/>
+      <Welcome name="Salah" age="30" city="giza"/>
     </div>
+    <div className="App">
+      <WelcomeES />
+    </div>
+    </>
   );
 }
 
