@@ -1,4 +1,4 @@
-import React from 'react';
+import  React from 'react';
 
 function WelcomeSet (props) {
   let [name, setName] = React.useState('John Doe');
